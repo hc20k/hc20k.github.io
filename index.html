@@ -3,6 +3,7 @@
       <head>
             <meta charset="utf-8">
             <title>H's website</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
 
             <style media="screen">
                   body {
@@ -12,22 +13,49 @@
                   }
 
                   a {
+                        font-weight: bold;
                         color: red;
+                        padding: 10px 10px 10px 10px;
+                        background-color: rgba(25,25,25,255);
+                        border-radius: 10px;
+                        line-height: 50px;
+                        text-decoration: none;
                   }
 
-                  .projlink {
-                        font-size: 20px;
+                  .image-container {
+                        display: block;
+                        margin: auto;
+                        width: 40%;
+                        border-radius: 20px;
                   }
+
+                  .left {
+                        width: 20%;
+                        float: left;
+                        margin-left: 29%;
+                        text-align: left;
+                  }
+
+                  .right {
+                        float: right;
+                        margin-right: 25%;
+                        text-align: right;
+                        width: 25%;
+                  }
+
             </style>
       </head>
-      <body>
-            <h1>H's WEBSITE</h1>
-            <hr>
-            <a href="#" class="projlink">Project 1</a><br>
-            <a href="#" class="projlink">Project 1</a><br>
-            <a href="#" class="projlink">Project 1</a><br>
-            <a href="#" class="projlink">Project 1</a><br>
-            <a href="#" class="projlink">Project 1</a><br>
-            <a href="#" class="projlink">Project 1</a><br>
+      <body class="animated bounce zoomIn">
+            <h1 style="padding-left:10px;" class="animated fadeInDown">H's WEBSITE</h1>
+            <img class="image-container"  src="https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif" alt="">
+            <div class="left">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo poo consequat. Duis aute irure dolor in reprehenderit in voluptate velit pee cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="right">
+                  <a href="https://i.kym-cdn.com/photos/images/original/001/439/986/78c.jpg">This is a link</a><br>
+                  <a href="https://i.kym-cdn.com/photos/images/original/001/439/986/78c.jpg">This is also a link</a><br>
+                  <a href="https://i.kym-cdn.com/photos/images/original/001/439/986/78c.jpg">This is a link too</a><br>
+                  <a href="https://pbs.twimg.com/profile_images/1074055142306123776/ZWd3w_Ld_400x400.jpg">This is NOT a link</a><br>
+            </div>
       </body>
 </html>
