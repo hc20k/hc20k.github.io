@@ -108,6 +108,8 @@ a:visited {
 .projname {
       font-size: 1.3em;
       font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
 }
 
 .weekno {
