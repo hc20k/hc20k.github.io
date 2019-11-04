@@ -4,58 +4,78 @@
             <meta charset="utf-8">
             <title>H's website</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+            <link rel="stylesheet" href="css/master.css">
 
-            <style media="screen">
-                  body {
-                        font-family: sans-serif;
-                        background-color: black;
-                        color: white;
+            <script type="text/javascript">
+                  function scrollToAboutMe() {
+                        window.scrollTo(0,document.body.scrollHeight);
                   }
-
-                  a {
-                        font-weight: bold;
-                        color: red;
-                        padding: 10px 10px 10px 10px;
-                        background-color: rgba(25,25,25,255);
-                        border-radius: 10px;
-                        line-height: 50px;
-                        text-decoration: none;
-                  }
-
-                  .image-container {
-                        display: block;
-                        margin: auto;
-                        width: 40%;
-                        border-radius: 20px;
-                  }
-
-                  .left {
-                        width: 20%;
-                        float: left;
-                        margin-left: 29%;
-                        text-align: left;
-                  }
-
-                  .right {
-                        float: right;
-                        margin-right: 25%;
-                        text-align: right;
-                        width: 25%;
-                  }
-
-            </style>
+            </script>
       </head>
       <body class="animated bounce zoomIn">
-            <h1 style="padding-left:10px;" class="animated fadeInDown">H's WEBSITE</h1>
-            <img class="image-container"  src="https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif" alt="">
-            <div class="left">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo poo consequat. Duis aute irure dolor in reprehenderit in voluptate velit pee cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <!-- <h1 style="padding-left:10px;" class="animated fadeInDown">H's WEBSITE</h1> -->
+            <div class='bigheader'>
+                  <span class="coolheadertext">H's p5js Projects</span>
+                  <img class="image-container"  src="https://media.giphy.com/media/LmWnCBTOGUmw8/giphy.gif" alt="">
             </div>
-            <div class="right">
-                  <a href="https://i.kym-cdn.com/photos/images/original/001/439/986/78c.jpg">This is a link</a><br>
-                  <a href="https://i.kym-cdn.com/photos/images/original/001/439/986/78c.jpg">This is also a link</a><br>
-                  <a href="https://i.kym-cdn.com/photos/images/original/001/439/986/78c.jpg">This is a link too</a><br>
-                  <a href="https://pbs.twimg.com/profile_images/1074055142306123776/ZWd3w_Ld_400x400.jpg">This is NOT a link</a><br>
+
+            <div class="aboutme">
+                  <p>Welcome to my archive of p5js projects that I have created for my CSMA 101 class. Below you will find links to each project. Have fun!</p>
+                  <a id="aboutmelink" class="headerlink" href="javascript:scrollToAboutMe()">About Me</a>
             </div>
+
+            <div class="projects-container">
+                  <a href="showp5.html?script=p5jsBrush/sketch.js"><div class="container">
+                        <img src="projects/p5jsBrush/brush 1.png" alt="">
+                        <span class="weekno">Week 1</span><br>
+                        <span class="projname">Brush</span><br>
+                  </div></a>
+                  <a href="showp5.html?script=p5Ball/map1.js"><div class="container">
+                        <img src="projects/p5Ball/map ss 1.png" alt="">
+                        <span class="weekno">Week 2</span><br>
+                        <span class="projname">Drawing using map()</span><br>
+                  </div></a>
+                  <a href="showp5.html?script=p5Pong/pongExcersize.js"><div class="container">
+                        <img src="projects/p5Pong/ss.png" alt="">
+                        <span class="weekno">Week 3</span><br>
+                        <span class="projname">Pong</span><br>
+                  </div></a>
+                  <a href="showp5.html?script=p5Curtain/H_curtainExercise-i1.js"><div class="container">
+                        <img src="projects/p5Curtain/i1.png" alt="">
+                        <span class="weekno">Week 4</span><br>
+                        <span class="projname">Image Cross Hatching</span><br>
+                  </div></a>
+                  <a href="showp5.html?script=moonModularity/moonMod.js"><div class="container">
+                        <img src="projects/moonModularity/Screenshot.png" alt="">
+                        <span class="weekno">Week 5</span><br>
+                        <span class="projname">Moon Modularity</span><br>
+                  </div></a>
+                  <a href="showp5.html?script=planetStatistics/planetStats.js"><div class="container">
+                        <img src="projects/planetStatistics/Screenshot_1.png" alt="">
+                        <span class="weekno">Week 6</span><br>
+                        <span class="projname">Planet Statistics</span><br>
+                  </div></a>
+                  <a href="showp5.html?script=sunriseChallenge/SunriseProj.js"><div class="container">
+                        <img src="projects/sunriseChallenge/screenshot.png" alt="">
+                        <span class="weekno">Week 7</span><br>
+                        <span class="projname">Sunrise Challenge</span><br>
+                  </div></a>
+            </div>
+
+            <div class="aboutme-section">
+                  <img src="me.jpg" alt="">
+                  <span class="abtmeheader">About Me</span>
+                  <p>My name is Harrison, and I love programming. I've been coding for several years now. </p>
+            </div>
+
+            </div>
+
+            <nav>
+                  <ul>
+                        <li><a class="headerlink" href="https://instagram.com/hcrrison">Instagram</a></li>
+                        <li><a class="headerlink" href="https://twitter.com/lilhvert">Twitter</a></li>
+                  </ul>
+            </nav>
       </body>
 </html>
