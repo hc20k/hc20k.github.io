@@ -1,18 +1,18 @@
 body {
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      color: seagreen;
-      background-color: darkgrey;
+      color: white;
+      background-color: black;
 }
 
 .headerlink {
       font-weight: bold;
-      color: seagreen;
+      color: red;
       padding: 10px 10px 10px 10px;
       background-color: rgba(25,25,25,255);
-      
+      border-radius: 10px;
       line-height: 50px;
       text-decoration: none;
-      box-shadow: 0px 0px 10px dimgrey;
+      box-shadow: 0px 0px 10px black;
 }
 
 .image-container {
@@ -29,7 +29,8 @@ body {
       float: left;
       margin-left: 29%;
       text-align: left;
-      background-color: dimgrey;
+      border-radius: 10px;
+      background-color: #1d1d1d;
       padding: 0px 15px 0px 15px;
 }
 
@@ -46,7 +47,7 @@ body {
 
 .container:hover {
       transform: scale(1.05,1.05);
-      box-shadow: 0px 0px 10px dimgrey;
+      box-shadow: 0px 0px 10px black;
 }
 
 .coolheadertext {
@@ -57,7 +58,7 @@ body {
       width: 100%;
       text-align: center;
       mix-blend-mode:screen;
-      text-shadow: 0px 0px 50px dimgrey;
+      text-shadow: 0px 0px 50px black;
 }
 
 .projects-container {
@@ -69,7 +70,7 @@ body {
       width: 18%;
       display: inline-block;
       border-radius: 10px;
-      background: dimgrey;
+      background: #1d1d1d;
       padding: 10px;
       margin: 10px;
       transition: all .2s ease-in-out;
@@ -80,27 +81,27 @@ body {
       margin: auto;
       padding: 10px;
       border-radius: 5px;
-      box-shadow: 0px 0px 10px dimgrey;
-      background-color: darkgrey;
+      box-shadow: 0px 0px 10px black;
+      background-color: #1c1c1c;
       width: 90%;
       height: 90%;
       transition: all .2s ease-in-out;
 }
 
 .container > img:hover {
-      background-color: dimgrey;
+      background-color: #363636;
       transform: scale(1.04,1.04);
 }
 
 .container > a {
       font-weight: bold;
-      color: greenyellow;
+      color: red;
       text-decoration: none;
 }
 
 a:visited {
       font-weight: bold;
-      color: greenyellow;
+      color: #ff4000;
       text-decoration: none;
 }
 
@@ -132,7 +133,7 @@ nav {
 
 .aboutme-section {
       border-radius: 10px;
-      background: dimgrey;
+      background: #1d1d1d;
       padding: 10px 40px 10px 10px;
       text-align: left;
       width: 80%;
