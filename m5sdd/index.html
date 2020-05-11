@@ -11,7 +11,7 @@
         <h1>M5SDD</h1>
         <h6 class="colored">(M5 Social Distancing Device)</h2>
         <h3>by harrison coutee for CSMA 112</h3>
-        <a class="colored" href="https://github.com/hc20k/hc20k.github.io/raw/master/m5sdd/m5sdd.zip">Source Code</a>
+        <a class="colored" href="m5sdd.zip">Source Code</a>
 
     </div>
 
@@ -28,8 +28,9 @@
         <h1 class="colored">Goal</h1><br>
         <div style="font-size: 20px;">
             The goal for this project was to make a prototype for a device that helps the wearer social distancing during the coronavirus using the M5StickC and a thermal sensor.
-            I chose to build a program that can tell the user their level of safety while walking through their neighborhood or any public place. The program can also tell the user
-            how many people they've encountered, and can be calibrated to adapt to environments with different tempuratures.
+            I chose to build a program that can tell the user their level of safety while walking through their neighborhood or any public place. The program uses the speaker
+            attachment for the M5Stick and makes a loud obnoxious beeping noise whenever the wearer gets too close to another person. (Might not be practical for something like a library but since the M5Stick doesn't have a vibration motor I was forced to use the speaker)
+            The program can also tell the user how many people they've encountered, and can be calibrated to adapt to environments with different tempuratures.
             <br> <br>
             It's also connected to adafruit.io in order to log how many people the user has encountered in a more organized form. Below is a screenshot of my adafruit.io feed, from 
             when I walked around my house.
@@ -43,7 +44,7 @@
         </div>
     </div>
 
-    <iframe class="writeupframe" src="https://github.com/hc20k/hc20k.github.io/raw/master/m5sdd/assets/M5SDDWriteupFinal.pdf" frameborder="0"></iframe>
+    <iframe class="writeupframe" src="assets/M5SDDWriteupFinal.pdf" frameborder="0"></iframe>
 
 </body>
 </html>
