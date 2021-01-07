@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+#app {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    font-family: 'Roboto Mono';
+}
+
+.header {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.header > span {
+    display:block;
+}
+
+.project {
+    padding: 50px;
+    background-color: rgb(26, 26, 26);
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(49, 49, 49);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.01);
+    animation-name: background-move;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+}
+
+.project > span {
+    display:block;
+}
+
+.project .title {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.project .description {
+    font-weight: light;
+    font-size: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none; /* no underline */
+}
+
+.social > span {
+	color: #dddddd;
+}
+
+.social > img {
+	width: 2em;
+}
+
+/* bg images */
+
+@keyframes background-move {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 0 10%;
+    }
+}
+
+hr {
+	height: 1px;
+	border: none;
+	background-color: rgb(50,50,50);
+}
+
+.project.p5 {
+    background-image: url(assets/p5.png);
+    background-position: 0 0;
+    transition: background-position 0.3s;
+}
+
+.project.cd {
+    background-image: url(assets/cd.png);
+    background-size: 120%;
+    transition: background-position 0.3s;
+}
