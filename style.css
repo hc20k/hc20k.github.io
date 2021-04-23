@@ -7,7 +7,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto Mono', monospace;
 }
 
 .header {
@@ -90,4 +90,38 @@ hr {
     background-image: url(assets/cd.png);
     background-size: 120%;
     transition: background-position 0.3s;
+}
+
+.project.iw6ts {
+    background-image: url(assets/iw6ts.png);
+
+    background-size: 120%;
+    transition: background-position 0.3s;
+}
+
+.project.wb {
+    background-image: url(assets/wb.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    transition: background-position 0.3s;
+}
+
+.project.vbhax {
+    background-image: url(assets/vbhax.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-position 0.3s;
+}
+
+.project.portal {
+    background-image: url(assets/portal.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-position 0.3s;
+}
+
+.heading {
+    padding: 10px 10px 10px 10px;
+    display: block;
+    text-align: center;
 }
