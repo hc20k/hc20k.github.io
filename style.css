@@ -154,6 +154,15 @@ hr {
     animation: none;
 }
 
+
+.project.autoshow {
+    background-image: url(assets/autoshow.png);
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: none;
+}
+
 .project.tba {
     filter: blur(5px);
 }
