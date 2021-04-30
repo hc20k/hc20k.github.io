@@ -182,3 +182,87 @@ hr {
 .class-section > span{
     display: block;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.new-project {
+    padding: 10px;
+    margin: 5px;
+}
+
+.new-project {
+    transition: all 0.2s;
+}
+
+.new-project * {
+    transition: all 0.2s;
+}
+
+.new-project:hover {
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+    transform: scale(1.01);
+}
+
+.new-project:hover .title {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1em !important;
+}
+
+
+.projectinfo > .title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.new-project:hover .desc {
+    font-size: 1em;
+    max-lines: none;
+    overflow: none;
+    max-height: none;
+    color: white;
+}
+
+.clickme {
+    color: rgb(163, 195, 255)
+}
+
+.new-project .hidden {
+    display: none;
+    font-size: 0.8em;
+    color: rgb(217, 142, 246);
+}
+
+.new-project:hover .hidden {
+    display: block;
+}
+
+.projectinfo > .desc {
+    font-size: 0.7em;
+    max-lines: 1;
+    overflow: hidden;
+    word-wrap: ellipsis;
+    max-height: 2.6em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.longinfo {
+    display: none;
+}
+
+.new-project > img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.projectinfo > span{
+    display: block;
+}
+.hidden > span{
+    display: block;
+}
