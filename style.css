@@ -1,7 +1,7 @@
 body {
     background-color: rgb(15, 15, 15);
     color: white;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
 }
 
 #app {
@@ -16,7 +16,7 @@ body {
 }
 
 .header > span {
-    display:block;
+    display: block;
 }
 
 .project {
@@ -38,7 +38,7 @@ body {
 }
 
 .project > span {
-    display:block;
+    display: block;
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 10px rgb(98, 0, 128);
 }
@@ -59,113 +59,30 @@ a {
 }
 
 .social > span {
-	color: #dddddd;
+    color: #dddddd;
 }
 
 .social > img {
-	width: 2em;
+    width: 2em;
 }
 
 /* bg images */
 
 @keyframes background-move {
-    from{
+    from {
         background-position: 0 0;
     }
-    to{
+    to {
         background-position: 0 10%;
     }
 }
 
 hr {
-	height: 1px;
-	border: none;
-	background-color: rgb(50,50,50);
+    height: 1px;
+    border: none;
+    background-color: rgb(50, 50, 50);
 }
 
-.project.p5 {
-    background-image: url(assets/p5.png);
-    background-position: 0 0;
-    transition: background-position 0.3s;
-}
-
-.project.cd {
-    background-image: url(assets/cd.png);
-    background-size: 120%;
-    transition: background-position 0.3s;
-}
-
-.project.iw6ts {
-    background-image: url(assets/iw6ts.png);
-
-    background-size: 120%;
-    transition: background-position 0.3s;
-}
-
-.project.wb {
-    background-image: url(assets/wb.png);
-    background-repeat: no-repeat;
-    background-size: 90%;
-    transition: background-position 0.3s;
-}
-
-.project.vbhax {
-    background-image: url(assets/vbhax.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition: background-position 0.3s;
-}
-
-.project.portal {
-    background-image: url(assets/portal.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition: background-position 0.3s;
-}
-
-.project.vase {
-    background-image: url(assets/vase.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    transition: background-position 0.3s;
-}
-
-.project.chunks {
-    background-image: url(projects/csma111/chunks/preview.png);
-    background-position-y: -100px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    animation: none;
-}
-
-.project.m5sdd {
-    background-image: url(assets/m5sdd.png);
-    background-position-y: -100px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    animation: none;
-}
-
-.project.rr {
-    background-image: url(assets/roborunner.png);
-    background-position-y: -100px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    animation: none;
-}
-
-
-.project.autoshow {
-    background-image: url(assets/autoshow.png);
-    background-position-y: -100px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    animation: none;
-}
-
-.project.tba {
-    filter: blur(5px);
-}
 
 .heading {
     padding: 10px 10px 10px 10px;
@@ -179,7 +96,7 @@ hr {
     background-color: rgb(34, 34, 34);
 }
 
-.class-section > span{
+.class-section > span {
     display: block;
 }
 
@@ -212,9 +129,9 @@ hr {
     font-size: 1em !important;
 }
 
-
 .projectinfo > .title {
     font-size: 2em;
+    padding-bottom: 5px;
     font-weight: bold;
 }
 
@@ -227,7 +144,8 @@ hr {
 }
 
 .clickme {
-    color: rgb(163, 195, 255)
+    color: rgb(163, 195, 255);
+    text-decoration: underline;
 }
 
 .new-project .hidden {
@@ -242,7 +160,7 @@ hr {
 
 .projectinfo > .desc {
     font-size: 0.7em;
-    max-lines: 1;
+    max-lines: 2;
     overflow: hidden;
     word-wrap: ellipsis;
     max-height: 2.6em;
@@ -260,9 +178,9 @@ hr {
     border-radius: 3px;
 }
 
-.projectinfo > span{
+.projectinfo > span {
     display: block;
 }
-.hidden > span{
+.hidden > span {
     display: block;
 }

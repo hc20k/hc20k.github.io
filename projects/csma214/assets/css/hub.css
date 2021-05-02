@@ -1,0 +1,9 @@
+.topic-entry {
+    padding: 10px;
+    display: block;
+    background-color: grey;
+}
+
+.topic-entry > span {
+    display: block;
+}
