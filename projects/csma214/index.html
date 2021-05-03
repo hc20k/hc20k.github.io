@@ -6,23 +6,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSMA 214 OVERVIEW | HARRISON COUTEE</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/hub.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="root">
-        <h1>CSMA 214 OVERVIEW</h1>
-        <h4>by Harrison Coutee</h4>
+    <div id="arrow">
+        <img src="assets/arrow.png" alt="" srcset="">
+    </div>
 
-        <a class="topic-entry" href="logic.html">
-            <span>Weeks 1-2</span>
-            <span>Logic Gates</span> 
-        </a>
+    <div class="content">
+        <section class="section">
+            <img class="background" src="assets/math.jpg" alt="">
+            <div class="container header">
+                <h1>CSMA 214 Overview</h1>
+                <h4>by Harrison Coutee</h4>
+                <hr>
+                <h5>Professor Gottfried Haider, Spring 2021</h4>
+                <br>
+            </div>
+        </section>
 
-        <a class="topic-entry" href="sorting.html">
-            <span>Weeks 3-5</span>
-            <span>Sorting Algorithms</span> 
-        </a>
+        <section class="section">
+            <img class="background" src="old/assets/sortingbg.jpg" alt="">
+            <div class="container">
+                <div class="project-info">
+                    <h1>Bubble sort</h1>
+                    <hr>
+                    <p>
+                        For this assignment, we were asked to write a program in any language of our choice
+                        that sorts a series of numbers using the <b>bubble sort</b> algorithm. I chose to
+                        write this program in Python 3, using the numpy and Pygame modules. I also used sound in this
+                        project, and a low / high frequency beep will play each time a value is sorted, a high frequency tone playing
+                        if the value is high, and a low frequency tone playing when the value is low.
+                    </p>
+                    <br>
+                    <a class="download" href="old/download/CouteeHarrison.BubbleSort.py" target="_blank">Download</a>
+                </div>
+
+                <div class="demo">
+                    <img src="demo/bubble.gif" alt=""><br>
+                    <span>My bubble sort implementation in action</span>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="section">
+            <img class="background" src="old/assets/ca/background.jpg" alt="">
+            <div class="container">
+                <div class="project-info">
+                    <h1>Cellular automata</h1>
+                    <hr>
+                    <p>
+                        This assignment was to make a visual implementation of elementary cellular automata
+                        using Python 3 and PygameZero. My implementation lets the user implement a number
+                        (1-256) to use as a ruleset, allows the cells to wrap around the game window, and has infinite scrolling
+                        behavior.
+                        <br><br>
+                        The rulesets that I found most fascinating were rules 145, 190, and 120, shown on the righthand side of this section.
+                    </p>
+                    <br>
+                    <a class="download" href="old/download/CouteeHarrison.wolfram_ca.py" target="_blank">Download</a>
+                </div>
+
+                <div class="demo">
+                    <div class="image-grid">
+                        <img src="demo/120.png" alt="" srcset="">
+                        <img src="demo/145.png" alt="" srcset="">
+                        <img src="demo/190.png" alt="" srcset="">
+                        <img src="demo/wolfram.gif" alt="" srcset="">
+                    </div>
+                    <br>
+                    <span>Rule 120 (TL), Rule 145 (TR), Rule 190 (BL), and an animation of rule 90 (BR)</span>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="section">
+            <img class="background" src="old/assets/golbg.jpg" alt="">
+            <div class="container">
+                <div class="project-info">
+                    <h1>Conway's Game of Life</h1>
+                    <hr>
+                    <p>
+                        In this assigment we were asked to implement the rules of Conway's Game of Life, using Python 3
+                        and PygameZero. For my implementation I added the "wrap around edges" behavior, as well as the ability
+                        to spawn gliders and randomize every cell's state.
+                        <br><br>
+                        <b>Controls:</b>
+                        <li><b>Left click</b> to toggle the state of a specific cell</li>
+                        <li><b>Right click</b> to spawn a glider</li>
+                        <li><b>Press G</b> to randomize the state of every cell</li>
+                        <li><b>Press ENTER</b> to play the Game of Life</li>
+                        <li><b>Press SPACE</b> to play the Game of Life frame by frame.</li>
+                    </p>
+                    
+                    <br><br>
+                    <a class="download" href="old/download/CouteeHarrison.conway_life.py" target="_blank">Download</a>
+                </div>
+    
+                <div class="demo">
+                    <img src="demo/gol.gif" alt=""><br>
+                    <span>My implementation of the Game of Life</span>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="section">
+            <img class="background" src="demo/ca-game-bg.png" alt="">
+            <div class="container">
+                <div class="project-info">
+                    <h1>3D cellular automaton</h1>
+                    <hr>
+                    <p>
+                        For this assignment, we were asked to implement the behavior of cellular automata
+                        in 3D space using Unity. For my game I created a platformer, that has a floor where
+                        each tile behaves like a cellular automaton when the player walks on it. The objective
+                        of the game is to get past all the tiles without falling into the abyss. 
+                    </p>
+                    <br>
+                </div>
+    
+                <div style="max-width: 60%;" class="demo">
+                    <img src="demo/ca-game.gif" alt=""><br>
+                    <span>My game</span>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section class="section">
+            <img class="background" src="demo/amsimulation-bg.png" alt="">
+            <div class="container">
+                <div class="project-info">
+                    <h1>Vectors and forces (Midterm)</h1>
+                    <hr>
+                    <p>
+                        For our midterm, we were asked to create a simulation or a game that
+                        uses vectors and/or forces in 2D or 3D space. I created a small 2D simulation
+                        where the player can use a cannon to shoot a ball into a hoop, and after
+                        a certain amount of time the ball would explode and affect physics objects around
+                        it. The targets placed around the level will fall if a bomb explodes next to it.
+                    </p>
+                    <br>
+                </div>
+    
+                <div style="max-width: 60%;" class="demo">
+                    <img src="demo/amsimulation.gif" alt=""><br>
+                    <span>My game</span>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section class="section">
+            <img class="background" src="demo/trees-bg.png" alt="">
+            <div class="container">
+                <div class="project-info">
+                    <h1>Trees</h1>
+                    <hr>
+                    <p>
+                        For this assignment we were given a template that generates fractals in Python
+                        using the Processing module, and told to make our own remix of the implementation.
+                        For mine, I attempted to create a tree out of the tree algorithm, complete with a sun and
+                        grass on the ground. I also animated the fractals and the colors, so it appears as if the 
+                        tree is alive.
+                    </p>
+                    <br><br>
+                    <a class="download" href="https://trinket.io/python/434ed0326e" target="_blank">Play on trinket.io</a>
+                </div>
+    
+                <div class="demo">
+                    <div class="image-grid">
+                        <img src="demo/tree-ss1.png" alt="" srcset="">
+                        <img src="demo/tree-ss2.png" alt="" srcset="">
+                        <img src="demo/tree-ss3.png" alt="" srcset="">
+                        <img src="demo/tree-game.gif" alt="" srcset="">
+                    </div>
+                    <span>Multiple snapshots of the game, and a short video (BR)</span>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section class="section">
+            <img class="background" src="demo/storm-bg.jpg" alt="">
+            <div class="container">
+                <div class="project-info">
+                    <h1>L-System</h1>
+                    <hr>
+                    <p>
+                        In this assignment we were given another template that implements an L-System, and 
+                        were asked to make our own spinoff. For my spinoff, I created a storm simulation,
+                        complete with lightning, rain, and clouds.
+                    </p>
+                    <br><br>
+                    <a class="download" href="https://trinket.io/python/4309462df6" target="_blank">Play on trinket.io</a>
+                </div>
+    
+                <div style="max-width: 60%;" class="demo">
+                    <img src="demo/storm.gif" alt=""><br>
+                    <span>My simulation</span>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
+<script src="main.js"></script>
 </html>

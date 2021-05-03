@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTING ALGORITHMS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/logic.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <img class="background" src="assets/sortingbg.jpg" alt="">
+
+    <div class="root">
+        <div class="topic">
+            <div class="body">
+                <span class="name">SORTING ALGORITHMS</span>
+                <div class="content">
+                    <h2>What are sorting algorithms?</h2><br>
+                    A sorting algorithm does exactly what the name implies; it sorts a series of objects using <c>comparisons</c>. 
+                    Sorting algorithms are commonly used on a series of numbers, to sort them from least -> greatest or the reverse.
+                    <br><br>
+                    There are many different types of sorting algorithms, but some of the most popular are the <c>insertion, selection,
+                    bubble, and quick</c> sorting algorithms.
+                    
+                    <hr>
+                    <div class="navigator">
+                        <a class="slide-nav" onclick=gotoSlide(0)>Insertion</a> | 
+                        <a class="slide-nav" onclick=gotoSlide(1)>Selection</a> | 
+                        <a class="slide-nav" onclick=gotoSlide(2)>Bubble</a> | 
+                        <a class="slide-nav" onclick=gotoSlide(3)>Quick</a> |
+                        <a class="slide-nav" onclick=gotoSlide(4)>The end</a> 
+                    </div>
+                    <br>
+
+                    <div type="slideshow" stage=0 name="Insertion">
+                        <h3>The Insertion sorting algorithm</h3>
+                        The insertion sorting method works pretty much the same way that we would sort playing cards in our hand.
+                        The array of objects are sorted into 2 parts: the sorted part and the unsorted part. The algorithm iterates through
+                        the values from the unsorted part and places at their correct positions in the sorted part.
+
+                        <br><br>
+                        <b>Pseudocode:</b><br>
+                        <code>
+for i = 1 to n
+    key ← A [i]
+    j ← i – 1
+    while j > = 0 and A[j] > key
+        A[j+1] ← A[j]
+        j ← j – 1
+    End while 
+    A[j+1] ← key
+                        </code>
+                        <citation>Code from: https://www.interviewbit.com/tutorial/insertion-sort-algorithm/</citation>
+
+                        <br><br>
+                        Below is a visualization of how the insertion algorithm works.
+                        <br><br>
+                        <img src="assets/insertionsort.gif" alt="">
+                        <br><citation>GIF from: https://github.com/danmoop/Sorting-algorithms</citation>
+                    </div>
+
+                    <div type="slideshow" stage=1 name="Selection">
+                        <h3>The Selection sorting algorithm</h3>
+                        The selection sorting algorithm is very similar to the insertion sorting algorithm, but there's one difference:
+                        in the insertion sort, the algorithm loops over the sorted elements and finds the right position in that array to place it.
+                        But in the selection sort, the algorithm loops over the unsorted elements and puts them at the end of the sorted elements.
+
+                        <br><br>
+                        <b>Pseudocode:</b><br>
+                        <code>
+for i = 1 to n - 1
+    /* set current element as minimum*/
+    min = i    
+                           
+    /* check the element to be minimum */
+                         
+    for j = i+1 to n 
+        if list[j] < list[min] then
+            min = j;
+        end if
+    end for
+                         
+    /* swap the minimum element with the current element*/
+    if indexMin != i  then
+        swap list[min] and list[i]
+    end if
+end for
+                        </code>
+                        <citation>Code from: https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm</citation>
+
+                        <br><br>
+                        Below is a visualization of how the selection algorithm works.
+                        <br><br>
+                        <img src="assets/selectionsort.gif" alt="">
+                        <br><citation>GIF from: https://i2.wp.com/algorithms.tutorialhorizon.com/files/2019/01/Selection-Sort-Gif.gif?ssl=1</citation>
+                    </div>
+
+                    <div type="slideshow" stage=2 name="Bubble">
+                        <h3>The Bubble sorting algorithm</h3>
+                        The bubble sort algorithm is very different from the insertion and selection algorithms. In the bubble sorting algorithm,
+                        the program iterates through each individual number, and checks to see if the number <i>before</i> that number is more than
+                        the current number, and if it is, it will swap the numbers' positions.
+
+                        <br><br>
+                        <b>Pseudocode:</b><br>
+                        <code>
+for all elements of list
+    if list[i] > list[i+1]
+        swap(list[i], list[i+1])
+    end if
+end for
+                        </code>
+                        <citation>Code from: https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm</citation>
+
+                        <br><br>
+                        Below is a visualization of how the bubble sorting algorithm works.
+                        <br><br>
+                        <img src="assets/bubble.gif" alt="">
+                        <br><citation>GIF from: https://stackabuse.com/bubble-sort-and-cocktail-shaker-sort-in-javascript/</citation>
+                    </div>
+
+                    <div type="slideshow" stage=3 name="Quick">
+                        <h3>The Quick sorting algorithm</h3>
+                        The quick sort algorithm is known as a "divide and conquer algorithm. It picks an element in the array
+                        and uses it as a <c>pivot point</c>, and then the algorithm will split the array into two parts around that point.
+                        The <c>pivot point</c> can be in different spots based on however the user wants, there's many possibilities:
+                        <br>
+                        <br>
+
+                        <li>First element is <c>pivot point</c></li>
+                        <li>Last element is <c>pivot point</c> (used in the pseudocode below)</li>
+                        <li>Random element is <c>pivot point</c></li>
+                        <li>Middle element is <c>pivot point</c></li>
+
+                        <br><br>
+                        <b>Pseudocode:</b><br>
+                        <code>
+/* low  --> Starting index,  high  --> Ending index */
+quickSort(arr[], low, high)
+{
+    if (low < high)
+    {
+        /* pi is partitioning index, arr[pi] is now
+           at right place */
+        pi = partition(arr, low, high);
+
+        quickSort(arr, low, pi - 1);  // Before pi
+        quickSort(arr, pi + 1, high); // After pi
+    }
+}
+                        </code>
+                        <citation>Code from: https://www.geeksforgeeks.org/quick-sort/</citation>
+
+                        <br><br>
+                        Below is a visualization of how the quick sorting algorithm works. This gif uses a random pivot.
+                        <br><br>
+                        <img src="assets/quick.gif" alt="">
+                        <br><citation>GIF from: https://commons.wikimedia.org/wiki/File:Quicksort-example.gif</citation>
+                    </div>
+
+                    <div type="slideshow" stage=4 name="The end">
+                        <h3>The end!</h3><br>
+                        Thanks for reading this entry on some of the different types of sorting algorithms and
+                        how they work! Here's a really interesting video on sorting algorithms with a sound representation <c>(epilepsy warning)</c>:
+
+                        <br><br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kPRA0W1kECg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br>
+                        Also, check out a sorting algorithm demo I made for class this semester, it simulates the bubble sorting algorithm.<br>
+                        <i>Requires pygame and numpy to be installed</i><br><br>
+
+                        <a href="download/CouteeHarrison.BubbleSort.py" target="_blank">CouteeHarrison.BubbleSort.py</a>
+                        <br><br>
+
+                        <b>Sources:</b><br>
+                        <a href="https://github.com/danmoop/Sorting-algorithms">https://github.com/danmoop/Sorting-algorithms</a><br>
+                        <a href="https://www.interviewbit.com/tutorial/insertion-sort-algorithm/">https://www.interviewbit.com/tutorial/insertion-sort-algorithm/</a><br>
+                        <a href="https://www.toptal.com/developers/sorting-algorithms">https://www.toptal.com/developers/sorting-algorithms</a><br>
+
+                        <br><br>
+                    </div>
+
+                    <button id="slide-back-btn">Back</button>
+                    <button id="slide-next-btn">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/stages.js"></script>
+
+</body>
+<!-- 
+    Sources:
+    https://github.com/danmoop/Sorting-algorithms
+    https://www.interviewbit.com/tutorial/insertion-sort-algorithm/
+    https://www.toptal.com/developers/sorting-algorithms
+    
+
+ -->
+</html>

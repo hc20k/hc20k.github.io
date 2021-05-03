@@ -1,0 +1,9 @@
+.cagrid {
+    margin: 1em 0;
+    border-collapse: collapse;
+}
+
+.cagrid > * > tr > td {
+    padding: 0.5em 1em;
+    border: 1px solid #a2a9b1;  
+}
